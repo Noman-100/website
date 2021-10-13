@@ -1,0 +1,359 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: #ddd;
+}
+
+div.container {
+   background-color: #ddd;
+   position: relative;
+}
+
+/*------ nav -------*/
+nav.nav-bar {
+   background-color: cadetblue;
+   color: #fff;
+   padding: 10px 20px;
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav.nav-bar div.img-logo {
+   height: 55px;
+   width: 55px;
+   background-color: #888;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+nav.nav-bar div.img-logo img {
+   height: 55px;
+   width: 55px;
+   border-radius: 50%;
+}
+
+nav.nav-bar div.title-h h1 {
+   font-family: fantasy;
+   font-style: 1.5rem;
+}
+
+nav.nav-bar ul {
+   list-style-type: none;
+}
+
+nav.nav-bar ul li {
+   float: left;
+}
+
+nav.nav-bar ul li a {
+   text-decoration: none;
+   font-weight: 600;
+   color: #fff;
+   padding: 10px;
+}
+
+/*--  banner  --*/
+div.banner {
+   padding: 40px 80px;
+   background-color: #fff;
+}
+
+div.banner div.corner-top {
+   float: right;
+}
+
+div.banner div.rotate {
+   height: 80px;
+   width: 80px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+div.banner div.rotate img {
+   height: 90px;
+   width: 90px;
+   border-radius: 50%;
+   transition: transform 1s;
+}
+
+div.banner div.rotate img:hover {
+   transform: rotate(360deg);
+}
+
+div.banner center.name {
+   padding-top: 100px;
+   width: 100%;
+}
+
+div.banner center.name h2 {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: 900;
+}
+
+div.banner center.name p {
+   color: gray;
+}
+
+/*-- tutorial sections --*/
+section.tutorial {
+   background-color: #888;
+   color: #fff;
+   padding: 20px 30px;
+}
+
+section.tutorial center h2 {
+   padding: 10px;
+}
+
+div.tutorials {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-gap: 13px;
+}
+
+div.tutorials>div {
+   height: 130px;
+   background-image: linear-gradient(Brown, #883B1E);
+   border: 0.5px solid #fff;
+   display: grid;
+   place-items: center;
+}
+
+/*-- CV sections --*/
+section.cvs {
+   background-color: lightseagreen;
+   color: #fff;
+   padding: 20px 30px;
+}
+
+section.cvs center h2 {
+   padding: 10px;
+}
+
+section.cvs div.img-cvs {
+   display: flex;
+}
+
+section.cvs div.img-cvs div.img {
+   flex-basis: 50%;
+   display: grid;
+   place-items: center;
+}
+
+section.cvs div.img-cvs div.img img {
+   height: 170px;
+   width: 160px;
+   border: 2px solid #fff;
+   border-radius: 50%;
+}
+
+section.cvs div.img-cvs div.cv {
+   flex-basis: 50%;
+}
+
+section.cvs div.img-cvs div.cv p {
+   padding: 13px 0px;
+   border-bottom: 1px solid #fff;
+}
+
+section.cvs div.img-cvs div.cv input {
+   margin: 20px 0px 10px 0px;
+   padding: 10px;
+   background-color: midnightblue;
+   color: #fff;
+   border: none;
+   border: 0.5px solid black;
+   border-radius: 10px;
+   transition: all 0.3s;
+}
+
+section.cvs div.img-cvs div.cv input:hover {
+   background-color: indigo;
+   box-shadow: 0px 0px 3px #000;
+}
+
+/*-- skills sections --*/
+section.skills {
+   background-color: #fff;
+   padding: 20px 25px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+section.skills div.item {
+   background-color: darkgray;
+   flex-basis: 32%;
+   overflow: hidden;
+   transition: all 0.3s;
+}
+
+section.skills div.item:hover {
+   box-shadow: 6px 6px 5px #888,
+      -6px 6px 6px #888;
+}
+
+section.skills div.item div.img {
+   padding: 20px;
+   display: grid;
+   place-items: center;
+}
+
+section.skills div.item div.img div.bd {
+   border: 2px solid #fff;
+   display: grid;
+   place-items: center;
+   border-radius: 50%;
+   padding: 10px;
+}
+
+section.skills div.item div.img div.bd img {
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+}
+
+section.skills div.item h2 {
+   background-color: gray;
+   color: #fff;
+   text-align: center;
+   padding: 5px;
+}
+
+section.skills div.item ol {
+   padding-left: 25px;
+   padding-bottom: 10px;
+}
+
+section.skills div.item ol li {
+   padding: 7px 0px;
+   border-bottom: 1px solid #ddd;
+}
+
+section.skills div.item ol li:last-child {
+   border: none;
+}
+
+section.skills div.item ol li h3 {
+   color: #fff;
+}
+
+section.skills div.item ol li h3 a {
+   text-decoration: none;
+   color: #fff;
+}
+
+section.skills div.skil {
+   padding: 10px 20px;
+}
+
+section.skills div.skil h3 {
+   padding: 4px;
+}
+
+section.skills div.skil progress {
+   width: 100%;
+   padding: 1px;
+   border: 1px solid transparent;
+   border-radius: 50px;
+}
+
+/*-- footer sections --*/
+footer section.ftr-one {
+   background-color: lightseagreen;
+   color: #fff;
+   padding: 30px 40px;
+   display: flex;
+   justify-content: space-between;
+}
+
+footer section.ftr-one div.archive,
+footer section.ftr-one div.contact,
+footer section.ftr-one div.social {
+   flex-basis: 30%;
+   list-style-position: inside;
+   overflow: hidden;
+}
+
+footer section.ftr-one div.archive ol li {
+   padding: 8px 0px;
+}
+
+form input,
+form textarea {
+   margin: 7px 0px;
+   padding: 10px;
+   text-align: center;
+   outline: none;
+   border: none;
+   border: 1px solid #888;
+   border-radius: 5px;
+   width: 100%;
+}
+
+form textarea {
+   resize: none;
+   height: 150px;
+}
+
+form input[type=submit],
+form input[type=reset] {
+   width: 40%;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   margin: 0px 10px;
+   border-radius: 10px;
+}
+
+form input[type=reset] {
+   float: right;
+}
+
+div.social img {
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   transition: all 0.3s;
+}
+
+div.social img:hover {
+   box-shadow: 0px 0px 3px #000;
+}
+
+section.ftr-two {
+   background-color: #222;
+   color: #fff;
+   padding: 20px 0px;
+   display: flex;
+   justify-content: space-around;
+}
+
+section.ftr-two ul {
+   list-style-type: none;
+}
+
+section.ftr-two ul li {
+   float: left;
+}
+
+section.ftr-two ul li a {
+   padding: 7px 10px;
+   text-decoration: none;
+   color: #fff;
+   font-weight: 400px;
+}
+
+i.fa-heart {
+   padding: 0px 1px;
+   width: fit-content;
+   color: orangered;
+}
+/*-- That's Complete --*/
